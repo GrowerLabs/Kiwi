@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project Kiwi</string>
+    <string name="create_account">Create an Account</string>
+    <string name="or_sign_in">Or Sign In</string>
+    <string name="signup_text1">Sign Up</string>
+    <string name="signup_text2">Find and book the best services in your area</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_acc">Don\'t have an Account?</string>
+    <string name="enter_your_email_id">Enter your email id to recover password</string>
 </resources>
