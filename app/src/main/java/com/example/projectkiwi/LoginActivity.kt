@@ -3,8 +3,9 @@ package com.example.projectkiwi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
 import com.example.projectkiwi.databinding.ActivityLoginBinding
+import com.example.projectkiwi.presentation.signin.SigninActivity
+import com.example.projectkiwi.presentation.signup.SignupActivity
 import com.synnapps.carouselview.CarouselView
 import com.synnapps.carouselview.ImageListener
 
@@ -34,11 +35,13 @@ class LoginActivity : AppCompatActivity() {
         binding.btnCreateAccountLogin.setOnClickListener {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         binding.tvSignInLogin.setOnClickListener {
             val intent = Intent(this, SigninActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

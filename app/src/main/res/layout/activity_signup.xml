@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity"
+    tools:context=".presentation.signup.SignupActivity"
     android:background="@drawable/gradient_background">
 
     <ImageView
@@ -83,6 +83,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="Last Name"
+        android:visibility="gone"
         app:hintTextColor="@color/purple_700"
         app:boxBackgroundColor="@color/white">
 
@@ -160,6 +161,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="Confirm Password"
+        android:visibility="gone"
         app:hintTextColor="@color/purple_700"
         app:boxBackgroundColor="@color/white">
 
@@ -219,5 +221,15 @@
             android:textStyle="bold"
             android:textSize="16sp"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
+    <ProgressBar
+        android:id="@+id/pb_loading_signupActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

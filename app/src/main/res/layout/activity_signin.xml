@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SigninActivity"
+    tools:context=".presentation.signin.SigninActivity"
     android:background="@drawable/gradient_background">
 
     <ImageView
@@ -61,13 +61,13 @@
         app:boxBackgroundColor="@color/white">
 
         <EditText
-            android:id="@+id/et_firstName_signup"
+            android:id="@+id/et_emailId_signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_btn"
             android:inputType="text"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            android:background="@drawable/round_btn"/>
+            android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -86,7 +86,7 @@
         app:boxBackgroundColor="@color/white">
 
         <EditText
-            android:id="@+id/et_lastName_signup"
+            android:id="@+id/et_password_signIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -158,5 +158,17 @@
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/pb_loading_signInActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
